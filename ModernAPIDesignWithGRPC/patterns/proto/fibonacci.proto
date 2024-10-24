@@ -15,4 +15,11 @@ message SyncFibonacciResponse {
 message AsyncFibonacciResponse {
 	int32 sequence = 1;
 	int32 fibonacciNumber = 2;
-}	
+}
+
+service FibonacciService {
+	// Unary
+	rpc SyncFibonacci(FibonacciRequest) returns (SyncFibonacciResponse) {};
+	// Server streaming
+	rpc AsyncFibonacci(FibonacciRequest) returns (stream AsyncFibonacciResponse) {};
+}
