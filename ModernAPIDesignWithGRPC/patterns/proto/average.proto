@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package proto;
+option go_package="./proto";
+
+message AverageRequest {
+	int32 number = 1;
+}
+
+message AverageResponse {
+	int32 average = 1;
+}
+
+service AverageService {
+	rpc FindAverage(stream AverageRequest) returns (AverageResponse) {};
+}
