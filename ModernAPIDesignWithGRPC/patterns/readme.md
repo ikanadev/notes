@@ -19,3 +19,8 @@ Generate the proto code: `protoc --go_out=. --go-grpc_out=. proto/*.proto`
 Run server `go run ./cmd/grpc-average-server/main.go`
 Run client `go run ./cmd/grpc-average-client/main.go -numbers=1,2,3,4`
 
+### Example 4: Bi-directional streaming
+Client sends a stream of numbers and server returns a stream of the max number
+Generate the proto code: `protoc --go_out=. --go-grpc_out=. proto/*.proto`
+Run server `go run ./cmd/grpc-max-server/main.go`
+Run client `go run ./cmd/grpc-max-client/main.go -numbers=5,2,3,4,5,6,7,8,9,10,11,13,15,25`
