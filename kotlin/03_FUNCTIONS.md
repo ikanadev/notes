@@ -1,4 +1,4 @@
-##### Functions
+### Functions
 Simple Functions
 ```kotlin
 fun sum(x: Int, y: Int): Int {

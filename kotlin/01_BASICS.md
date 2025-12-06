@@ -1,6 +1,6 @@
 Learning the basics of Kotlin
 
-##### Entry point
+### Entry point
 Kotlin entry point is the `main` function
 
 ```kotlin
@@ -9,21 +9,21 @@ fun main() {
 }
 ```
 
-##### Variables
+### Variables
 ```kotlin
 val a = 1 // immutable
 var b = 2 // mutable
 b = 3
 ```
 
-##### String templates
+### String templates
 ```kotlin
 var a = 1
 var b = 2
 println("$a + $b = ${a + b}")
 ```
 
-##### Basic types
+### Basic types
 Kotlin can infer the type of a variable, but we can set it explicitly
 ```kotlin
 var a: Int = 1
@@ -45,10 +45,11 @@ The following table summarizes the basic types
 - The floating point version has a prefix `F` `3.14f`
 - Characters use single quotes `'` `'a'`
 
-##### Collections
+### Complex types
+#### Collections
 Kotlin has the following collections to manage group of items: `Lists` (ordered), `Sets` (unordered) and `Maps` (key-value pairs), each one with *Mutable* and *Immutable* versions.
 
-###### List
+#### List
 ```kotlin
 val names: List<String> = listOf("Alice", "Bob", "Charlie") // Immutable
 // Mutable versions are MutableList and mutableListOf
@@ -64,7 +65,7 @@ if ("Alice" in names) {
 }
 ```
 
-###### Set
+#### Set
 It can contain only unique values, so duplicates are ignored
 ```kotlin
 val names: Set<String> = setOf("Alice", "Bob", "Charlie") // Immutable
@@ -78,7 +79,7 @@ if ("Alice" in names) {
 }
 ```
 
-###### Map
+#### Map
 ```kotlin
 val names: Map<String, Int> = mapOf("Alice" to 1, "Bob" to 2, "Charlie" to 3) // Immutable
 // Mutable versions are MutableMap and mutableMapOf

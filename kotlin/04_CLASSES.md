@@ -1,4 +1,4 @@
-##### Classes
+### Classes
 We can define the properties of a class in the constructor (arguments), and the methods in the body
 ```kotlin
 class Contact(val id: Int, var email: String = "example@gmail.com") {
@@ -13,7 +13,7 @@ val contact = Contact(1)
 contact.printCategory() // 1
 ```
 
-###### Data classes
+#### Data classes
 Used to store data, and automatically implements the `equals`, `hashCode`, `toString`, `copy` and `componentN` functions
 ```kotlin
 data class Contact(val id: Int, var name: String)
@@ -23,22 +23,22 @@ var contact2 = contact.copy(id = 2)
 contact.toString() // Contact(id=1, name=Alice)
 ```
 
-###### Extension functions
+#### Extension functions
 ```kotlin
 fun String.lastChar(): Char = this.get(this.length - 1)
 "Hello".lastChar() // 'o'
 ```
 
-##### Scope functions
+### Scope functions
 
-###### let
+#### let
 ```kotlin
 val someVar: String? = someFunctionThatReturnsStringOrNull()
 someVar?.let { it -> println(it) } // it holds the not null value of someVar
 someVar?.let { println(it) }
 ```
 
-###### apply
+#### apply
 It helps to initialize objects at the time of creation
 ```kotlin
 class Contact() {
@@ -56,7 +56,7 @@ val contact = Contact().apply {
 }
 ```
 
-###### run
+#### run
 Allows to execute a block of code on an object and return something
 ```kotlin
 class Contact() {
@@ -75,7 +75,7 @@ val bobName = contact.run {
 }
 ```
 
-###### also
+#### also
 ```kotlin
 Allows to do "something" with the object and return it
 val medals: List<String> = listOf("Gold", "Silver", "Bronze")
@@ -89,7 +89,7 @@ val newMedals: List<String> =
 println(newMedals)
 ```
 
-###### with
+#### with
 Allow to call multiple functions on an object
 ```kotlin
 class Messages() {
