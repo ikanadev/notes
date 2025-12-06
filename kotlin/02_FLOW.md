@@ -1,4 +1,4 @@
-##### Conditionals
+### Conditionals
 We can use `when` and `if` to conditionally execute code
 ```kotlin
 val check = true
@@ -20,15 +20,15 @@ val result = when (greet) {
 println(result) // 1
 ```
 
-##### Loops
-###### Ranges
+### Loops
+#### Ranges
 ```kotlin
 1..4 // 1, 2, 3, 4
 1..<4 // 1, 2, 3
 4 downTo 1 // 4, 3, 2, 1
 1..5 step 2 // 1, 3, 5
 ```
-###### For
+#### For
 ```kotlin
 for (i in 1..5) {
     println(i) // 1, 2, 3, 4, 5
@@ -38,7 +38,7 @@ for (name in names) {
     println(name)
 }
 ```
-###### While
+#### While
 ```kotlin
 var i = 1
 while (i < 10) {

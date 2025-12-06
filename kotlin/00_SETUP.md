@@ -1,14 +1,14 @@
-#### Install Kotlin compiler
+### Install Kotlin compiler
 
 [https://kotlinlang.org/docs/command-line.html](https://kotlinlang.org/docs/command-line.html) points to [https://github.com/JetBrains/kotlin/releases](https://github.com/JetBrains/kotlin/releases) where I downloaded the zip, placed in `/opt/kotlin/` and add the `bin` directory in the system `$PATH`.
 
 
-#### Install Gradle
+### Install Gradle
 
 Followed the instructions of [https://docs.gradle.org/current/userguide/installation.html#ex-installing-manually](https://docs.gradle.org/current/userguide/installation.html#ex-installing-manually) to install gradle
 
 
-#### Start a Kotlin project
+### Start a Kotlin project
 Create a project using gradle
 ```sh
 mkdir my-project
